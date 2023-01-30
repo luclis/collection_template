@@ -1,0 +1,21 @@
+// Template for Jenkins File. By default, do noting.
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'Building Step in progress'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'Testing step in progress'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'Deploying step in progress'
+            }
+        }
+    }
+}
