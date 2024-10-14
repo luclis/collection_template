@@ -7,6 +7,17 @@ You can build a new repository for an Ansible Collection using this template by 
 
 <!-- Describe the collection and why a user would want to use it. What does the collection do? -->
 
+## Our mission
+
+<!-- Put your collection's mission statement in here. Example follows. -->
+
+At the `your collection name`, our mission is to produce and maintain simple, flexible,
+and powerful open-source software tailored to `your collection purpose`.
+
+We welcome members from all skill levels to participate actively in our open, inclusive, and vibrant community.
+Whether you are an expert or just beginning your journey with Ansible and `your collection name`,
+you are encouraged to contribute, share insights, and collaborate with fellow enthusiasts!
+
 ## Code of Conduct
 
 We follow the [Ansible Code of Conduct](https://docs.ansible.com/ansible/devel/community/code_of_conduct.html) in all our interactions within this project.
@@ -15,15 +26,18 @@ If you encounter abusive behavior, please refer to the [policy violations](https
 
 ## Communication
 
-<!--List available communication channels. In addition to channels specific to your collection, we also recommend to use the following ones.-->
+<!--
+If your collection is not present on the Ansible forum yet, please check out the existing [tags](https://forum.ansible.com/tags) and [groups](https://forum.ansible.com/g) - use what suits your collection. If there is no appropritate tag and group yet, please [request one](https://forum.ansible.com/t/requesting-a-forum-group/503/17).
+-->
 
-We announce releases and important changes through Ansible's [The Bullhorn newsletter](https://github.com/ansible/community/wiki/News#the-bullhorn). Be sure you are [subscribed](https://eepurl.com/gZmiEP).
+* Join the Ansible forum:
+  * [Get Help](https://forum.ansible.com/c/help/6): get help or help others. Please add appropriate tags if you start new discussions, for example the `YOUR TAG` tag.
+  * [Posts tagged with 'your tag'](https://forum.ansible.com/tag/YOUR_TAG): subscribe to participate in collection/technology-related conversations.
+  * [Refer to your forum group here if exists](https://forum.ansible.com/g/): by joining the team you will automatically get subscribed to the posts tagged with [your group forum tag here](https://forum.ansible.com/tags).
+  * [Social Spaces](https://forum.ansible.com/c/chat/4): gather and interact with fellow enthusiasts.
+  * [News & Announcements](https://forum.ansible.com/c/news/5): track project-wide announcements including social events. The [Bullhorn newsletter](https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn), which is used to announce releases and important changes, can also be found here.
 
-Join us in the `#ansible` (general use questions and support), `#ansible-community` (community and collection development questions), and other [IRC channels](https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels).
-
-We take part in the global quarterly [Ansible Contributor Summit](https://github.com/ansible/community/wiki/Contributor-Summit) virtually or in-person. Track [The Bullhorn newsletter](https://eepurl.com/gZmiEP) and join us.
-
-For more information about communication, refer to the [Ansible Communication guide](https://docs.ansible.com/ansible/devel/community/communication.html).
+For more information about communication, see the [Ansible communication guide](https://docs.ansible.com/ansible/devel/community/communication.html).
 
 ## Contributing to this collection
 
@@ -31,25 +45,30 @@ For more information about communication, refer to the [Ansible Communication gu
 
 The content of this collection is made by people like you, a community of individuals collaborating on making the world better through developing automation software.
 
-We are actively accepting new contributors.
+We are actively accepting new contributors and all types of contributions are very welcome.
 
-Any kind of contribution is very welcome.
+Don't know how to start? Refer to the [Ansible community guide](https://docs.ansible.com/ansible/devel/community/index.html)!
 
-You don't know how to start? Refer to our [contribution guide](CONTRIBUTING.md)!
+Want to submit code changes? Take a look at the [Quick-start development guide](https://docs.ansible.com/ansible/devel/community/create_pr_quick_start.html).
 
-We use the following guidelines:
+We also use the following guidelines:
 
-* [CONTRIBUTING.md](CONTRIBUTING.md)
-* [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md)
-* [Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html)
-* [Ansible Development Guide](https://docs.ansible.com/ansible/devel/dev_guide/index.html)
-* [Ansible Collection Development Guide](https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html#contributing-to-collections)
+* [Collection review checklist](https://docs.ansible.com/ansible/devel/community/collection_contributors/collection_reviewing.html)
+* [Ansible development guide](https://docs.ansible.com/ansible/devel/dev_guide/index.html)
+* [Ansible collection development guide](https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html#contributing-to-collections)
 
 ## Collection maintenance
 
 The current maintainers are listed in the [MAINTAINERS](MAINTAINERS) file. If you have questions or need help, feel free to mention them in the proposals.
 
-To learn how to maintain / become a maintainer of this collection, refer to the [Maintainer guidelines](MAINTAINING.md).
+To learn how to maintain/become a maintainer of this collection, refer to the [Maintainer guidelines](https://docs.ansible.com/ansible/devel/community/maintainers.html).
+
+It is necessary for maintainers of this collection to be subscribed to:
+
+* The collection itself (the `Watch` button -> `All Activity` in the upper right corner of the repository's homepage).
+* The [news-for-maintainers repository](https://github.com/ansible-collections/news-for-maintainers).
+
+They also should be subscribed to Ansible's [The Bullhorn newsletter](https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn).
 
 ## Governance
 
@@ -103,7 +122,7 @@ You can also install a specific version of the collection, for example, if you n
 ansible-galaxy collection install NAMESPACE.COLLECTION_NAME:==0.1.0
 ```
 
-See [Ansible Using collections](https://docs.ansible.com/ansible/devel/user_guide/collections_using.html) for more details.
+See [using Ansible collections](https://docs.ansible.com/ansible/devel/user_guide/collections_using.html) for more details.
 
 ## Release notes
 
@@ -117,13 +136,12 @@ See the [changelog](https://github.com/ansible-collections/REPONAMEHERE/tree/mai
 
 <!-- List out where the user can find additional information, such as working group meeting times, slack/IRC channels, or documentation for the product this collection automates. At a minimum, link to: -->
 
-- [Ansible Collection overview](https://github.com/ansible-collections/overview)
-- [Ansible User guide](https://docs.ansible.com/ansible/devel/user_guide/index.html)
-- [Ansible Developer guide](https://docs.ansible.com/ansible/devel/dev_guide/index.html)
-- [Ansible Collections Checklist](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst)
-- [Ansible Community code of conduct](https://docs.ansible.com/ansible/devel/community/code_of_conduct.html)
-- [The Bullhorn (the Ansible Contributor newsletter)](https://us19.campaign-archive.com/home/?u=56d874e027110e35dea0e03c1&id=d6635f5420)
-- [News for Maintainers](https://github.com/ansible-collections/news-for-maintainers)
+- [Ansible user guide](https://docs.ansible.com/ansible/devel/user_guide/index.html)
+- [Ansible developer guide](https://docs.ansible.com/ansible/devel/dev_guide/index.html)
+- [Ansible collections requirements](https://docs.ansible.com/ansible/devel/community/collection_contributors/collection_requirements.html)
+- [Ansible community Code of Conduct](https://docs.ansible.com/ansible/devel/community/code_of_conduct.html)
+- [The Bullhorn (the Ansible contributor newsletter)](https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn)
+- [Important announcements for maintainers](https://github.com/ansible-collections/news-for-maintainers)
 
 ## Licensing
 
